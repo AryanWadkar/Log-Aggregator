@@ -9,7 +9,7 @@ diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.INFO);
 
 const exporter = new OTLPTraceExporter({
  url: process.env.AGG_URL,
- headers: {},
+ headers: {"customerID":"Emitter 1"},
 });
 const sdk = new opentelemetry.NodeSDK({
  traceExporter: exporter,

@@ -14,13 +14,14 @@ app.get('/', async (request, response) => {
 app.post('/recievelog', async (request, response) => {
   console.log("Recieved log");
   const span=request.body['resourceSpans'];
+  // console.log(span[0].scopeSpans[0].spans);
   const resouce=span[0];
-  // const size=resouce.resource.attributes.length;
-  // for(let i=0; i<size;i++) console.log(resouce.resource.attributes[i]);
+  // const size=resouce.scopeSpans.attributes.length;
+  // for(let i=0; i<size;i++) console.log(resouce.resource.scopeSpans[i]);
     await client.index({ 
     index: 'traces',
     id: resouce.resource.attributes[4].value.intValue,
-    body: resouce.resource
+    body: resouce
 }), (err, resp, status) => {
     console.log(resp);
 }
