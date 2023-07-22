@@ -1,0 +1,26 @@
+{
+  "name": "aggregator-emitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index-agg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon index-agg.js\" \"nodemon -r ./tracing.js index-emitter.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.8.1",
+    "@opentelemetry/api": "^1.4.1",
+    "@opentelemetry/auto-instrumentations-node": "^0.38.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.41.0",
+    "@opentelemetry/sdk-metrics": "^1.15.0",
+    "@opentelemetry/sdk-node": "^0.41.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
