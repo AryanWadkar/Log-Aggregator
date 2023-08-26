@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "echo \"Use npm run agg or npm run vis\"",
-    "build":"npm install && cd visualizer/vestige && npm run build",
+    "build":"npm install && cd visualizer/vestige && npm install && npm run build",
     "agg": "cd aggregator/agg-lb && start nginx && cd .. && concurrently \"set PORT=3001 && node index-agg.js\" \"set PORT=3002 && node index-agg.js\" \"set PORT=3003 && node index-agg.js\"",
     "vis": "cd visualizer/vis-lb && start nginx && cd .. && concurrently \"set PORT=8001 && node index-vis.js\" \"set PORT=8002 && node index-vis.js\"",
     "emm":"concurrently \"cd emitters/emitter1 && node -r ./tracing.js index-e1.js\" \"cd emitters/emitter2 && node -r ./tracing.js index-e2.js\"",
