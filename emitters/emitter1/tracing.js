@@ -1,4 +1,5 @@
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
 const opentelemetry = require("@opentelemetry/sdk-node");
 const { diag, DiagConsoleLogger, DiagLogLevel } = require('@opentelemetry/api');
 const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-http');
@@ -16,3 +17,4 @@ const sdk = new opentelemetry.NodeSDK({
  instrumentations: [getNodeAutoInstrumentations()]
 });
 sdk.start()
+

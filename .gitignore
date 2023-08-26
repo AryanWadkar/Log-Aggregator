@@ -1,2 +1,24 @@
 .env
 node_modules
+
+
+visualizer/vestigev/node_modules
+visualizer/vestigev/.pnp
+visualizer/vestigev/.pnp.js
+
+# testing
+visualizer/vestigev/coverage
+
+# production
+visualizer/vestigev/build
+
+# misc
+visualizer/vestigev/.DS_Store
+visualizer/vestigev/.env.local
+visualizer/vestigev/.env.development.local
+visualizer/vestigev/.env.test.local
+visualizer/vestigev/.env.production.local
+
+visualizer/vestigev/npm-debug.log*
+visualizer/vestigev/yarn-debug.log*
+visualizer/vestigev/yarn-error.log*

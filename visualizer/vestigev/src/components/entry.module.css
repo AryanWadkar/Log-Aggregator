@@ -1,0 +1,174 @@
+.entriessection {
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 92vh;
+overflow: hidden;
+}
+  
+.entrieslist {
+flex: 5;
+overflow-y: auto;
+border: 1px solid black
+}
+
+.entry {
+display: flex;
+align-items: center;
+padding: 10px;
+border-bottom: 1px solid #ccc;
+cursor: pointer;
+transition: background-color 0.3s;
+height: max-content;
+max-height: 15vh;
+font-size: 10px;
+align-items: stretch;
+}
+
+.entry:hover {
+    background-color: #f0f0f0;
+}
+    
+
+.entryarrow {
+font-size: 20px;
+opacity: 0.5;
+transition: opacity 0.3s;
+background-color: #19d29a;
+color: white;
+text-align: center;
+padding:0 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.entry:hover .entryarrow {
+    opacity: 1;
+}
+
+.ico{
+    transform: rotate(-45deg);
+    transition: 0.3s all;
+}
+
+.entry:hover .ico{
+    transform: rotate(0deg);
+}
+
+.entryleft {
+flex: auto;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
+.entryright {
+flex: auto;
+display: flex;
+justify-content: flex-end;
+}
+
+.entriesheader{
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    padding: 20px 15px;
+}
+
+
+
+
+
+.fieldslist {
+flex: 2;
+overflow-y: auto;
+background-color: #ECECEC;
+}
+
+.fieldheader{
+    background-color: #19d29a;
+    color: white;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+}
+
+.searchico:hover{
+cursor: pointer;
+}
+
+.field {
+display: flex;
+padding: 10px;
+text-align: center;
+border-bottom: 1px solid #7E7E7E;
+margin: 0 10px;
+font-size: 12px;
+}
+
+.fieldlabel {
+width: 50%;
+padding: 10px;
+border-radius: 8px;
+background-color: #19d29a;
+color: white;
+}
+
+.fieldinput {
+overflow: hidden;
+text-overflow: ellipsis;
+border-radius: 8px;
+width: 50%;
+margin: 0 5px;
+border-color: transparent;
+}
+.limitinput {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 8px;
+    width: min-content;
+    border-color: transparent;
+}
+
+.modaloverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make the overlay cover everything */
+}
+  
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 90vw;
+  max-height: 90vh;
+  min-width: 50vw;
+  min-height: 10vh;
+  overflow: scroll;
+  z-index: 1001; /* Make the modal appear above the overlay */
+}
+
+.modalcontent {
+  padding: 20px;
+}
+
+.modalclose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background-color: #19d29a;
+}

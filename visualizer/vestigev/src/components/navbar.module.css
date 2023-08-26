@@ -1,0 +1,39 @@
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    height: 8vh;
+    font-size:24px;
+  }
+  
+  .navbarleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .navbarright {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .btn{
+    font-size: 14px;
+    padding: 5px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .active{
+    border-bottom: 1px solid #19d29a;
+  }
+
+  .inactive{
+    border-bottom: 1px solid transparent;
+  }

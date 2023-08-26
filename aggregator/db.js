@@ -1,5 +1,7 @@
 const { Client } = require('@elastic/elasticsearch');
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+
 var client = new Client({  
   cloud: {
     id: process.env.CLOUD_ID

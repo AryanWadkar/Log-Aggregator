@@ -5,7 +5,17 @@
   "main": "index-agg.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"nodemon index-agg.js\" \"nodemon -r ./tracing.js index-emitter.js\""
+    "start": "echo \"Use npm run agg or npm run vis\"",
+    "build":"npm install && cd visualizer/vestige && npm run build",
+    "agg": "cd aggregator/agg-lb && start nginx && cd .. && concurrently \"set PORT=3001 && node index-agg.js\" \"set PORT=3002 && node index-agg.js\" \"set PORT=3003 && node index-agg.js\"",
+    "vis": "cd visualizer/vis-lb && start nginx && cd .. && concurrently \"set PORT=8001 && node index-vis.js\" \"set PORT=8002 && node index-vis.js\"",
+    "emm":"concurrently \"cd emitters/emitter1 && node -r ./tracing.js index-e1.js\" \"cd emitters/emitter2 && node -r ./tracing.js index-e2.js\"",
+    "aggexit":"cd aggregator/agg-lb && nginx.exe -s quit",
+    "visexit":"cd visualizer/vis-lb && nginx.exe -s quit",
+    "aggtest":"cd aggregator && nodemon index-agg.js",
+    "vistest":"cd visualizer && nodemon index-vis.js",
+    "e1":"cd emitters/emitter1 && nodemon -r ./tracing.js index-e1.js",
+    "e2":"cd emitters/emitter2 && nodemon -r ./tracing.js index-e2.js"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +25,9 @@
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/auto-instrumentations-node": "^0.38.0",
     "@opentelemetry/exporter-trace-otlp-http": "^0.41.0",
-    "@opentelemetry/sdk-metrics": "^1.15.0",
     "@opentelemetry/sdk-node": "^0.41.0",
+    "bullmq": "^4.7.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2"
   },
