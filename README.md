@@ -11,9 +11,9 @@ A set of services that serve as a scalable system to collect, aggregate, process
 CLOUD_ID=' ' (Elastic Search Deploy Cloud ID)\
 UN=' ' (Elastic Search Deploy Username)\
 PASS=' ' (Elastic Search Deploy Password)\
-AGG_URL='http://localhost:3000/recievelog' (Endpoint for aggregator server, to be put into services that want to log events)
-REDIS_URL=' ' (Redis DB url for BullMQ)
-REDIS_PASS=' ' (Redis DB pass for BullMQ)
+AGG_URL='http://localhost:3000/recievelog' (Endpoint for aggregator server, to be put into services that want to log events, changing this requires changing port for aggregator load balancer as well)\
+REDIS_URL=' ' (Redis DB url for BullMQ)\
+REDIS_PASS=' ' (Redis DB pass for BullMQ)\
 *Do not forget to update the port number under aggregator/index-agg.js line: 8
 
 ## System Design Schema
