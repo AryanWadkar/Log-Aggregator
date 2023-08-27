@@ -22,3 +22,8 @@ visualizer/vestigev/.env.production.local
 visualizer/vestigev/npm-debug.log*
 visualizer/vestigev/yarn-debug.log*
 visualizer/vestigev/yarn-error.log*
+
+aggregator/agg-lb/logs/access.log
+aggregator/agg-lb/logs/error.log
+visualizer/vis-lb/logs/access.log
+visualizer/vis-lb/logs/error.log
