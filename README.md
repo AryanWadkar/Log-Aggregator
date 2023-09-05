@@ -19,7 +19,7 @@ REDIS_PASS=' ' (Redis DB pass for BullMQ)\
 ## Video Explanation and demonstration
 https://drive.google.com/file/d/15TTMtrgGMYRaU76I8QxAOTpb8YhdAXM8/view?usp=sharing\
 
-## GET Routes available:
+## Routes available:
 
 ### Aggregator
 3000/ : Shows port of current aggregator you are being served from \
