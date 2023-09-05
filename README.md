@@ -22,3 +22,23 @@ https://drive.google.com/file/d/15TTMtrgGMYRaU76I8QxAOTpb8YhdAXM8/view?usp=shari
 ## System Design Schema
 ![LogAgg](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/d65121c4-136c-4989-997e-3384def321ac)
 
+## Hosted on EC2
+![Screenshot (142)](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/5cc1f75c-dd19-40df-98fd-0b1c24462b67)
+![Screenshot (141)](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/2adc06e2-7721-4a87-9c5f-3974c1bda8e2)
+![Screenshot (142)](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/b0147d57-a3b5-4aff-a989-bd4eedccee04)
+
+## GET Routes available:
+
+### Aggregator
+3000/ : Shows port of current aggregator you are being served from 
+3000/recievelog : endpoint to recieve logs
+
+### Visualizer
+8000/check : Shows port of current visualizer you are being served from
+8000/getall : Retrive first 1000 documents available
+8000/mappings : Retrive all the parameters you can search from
+8000/ : Visualizer website is served
+
+### Emitter
+5001/ : Shows emitter 1 status
+5002/ : Shows emitter 2 status
