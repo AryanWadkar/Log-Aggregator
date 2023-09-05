@@ -39,7 +39,7 @@ https://drive.google.com/file/d/15TTMtrgGMYRaU76I8QxAOTpb8YhdAXM8/view?usp=shari
 ![LogAgg](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/d65121c4-136c-4989-997e-3384def321ac)
 
 ## Hosted on EC2
-![Screenshot (142)](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/5cc1f75c-dd19-40df-98fd-0b1c24462b67)
+![Screenshot (140)](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/c6ff1b94-1ff1-4930-98de-f017059e2781)
 ![Screenshot (141)](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/2adc06e2-7721-4a87-9c5f-3974c1bda8e2)
 ![Screenshot (142)](https://github.com/AryanWadkar/Log-Aggregator/assets/85237273/b0147d57-a3b5-4aff-a989-bd4eedccee04)
 
