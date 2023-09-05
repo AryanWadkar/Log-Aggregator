@@ -10,7 +10,6 @@ visualizer/vestigev/.pnp.js
 visualizer/vestigev/coverage
 
 # production
-visualizer/vestigev/build
 
 # misc
 visualizer/vestigev/.DS_Store
